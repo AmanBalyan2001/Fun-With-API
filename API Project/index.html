@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Fun USing API</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <h1 class="text">Let decide  your <strong>AVATAR</strong> according to your <strong>WORD</strong></h1>
+    <form class="box">
+    
+        <label class="label">Enter Your Word </label><br>
+        <input class="input" type="text"required ><br>
+        <img src="Shinchan.jpg" alt="Thsi is the Shinchan Image" class="image" >
+        <button class="button">GO</button>
+    </form>
+
+   <script>
+       $(document).ready(function() {
+           $('.button').click(function() {
+             const TEXT = $('.input').val();
+             
+             $('.image').attr('src','https://joeschmoe.io/api/v1/random');
+             const b = $('.image');
+             console.log(b);
+         });
+       });
+   </script>
+</body>
+</html>
